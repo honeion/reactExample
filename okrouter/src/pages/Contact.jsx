@@ -7,7 +7,7 @@ function Contact() {
       <h1>Contact</h1>
       <ul>
         {list.map((item, index) => (
-          <ListComp item={item} idx={index}></ListComp>
+          <ListComp key={index} item={item} idx={index}></ListComp>
         ))}
       </ul>
     </div>
